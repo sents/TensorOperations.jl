@@ -1,7 +1,7 @@
 name = "TensorOperations"
 uuid = "6aa20fa7-93e2-5fca-9bc0-fbd0db3c71a2"
 authors = ["Jutho Haegeman"]
-version = "3.2.4"
+version = "3.2.5"
 
 [deps]
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
@@ -10,13 +10,14 @@ TupleTools = "9d95972d-f1c8-5527-a6e0-b4b365fa01f6"
 LRUCache = "8ac3fa9e-de4c-5943-b1dc-09c6b5f20637"
 Requires = "ae029012-a4dd-5104-9daa-d747884805df"
 CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
+cuTENSOR = "011b41b2-24ef-40a8-b3eb-fa098493e9e1"
 
 [compat]
 Strided = "1"
 TupleTools = "1.1"
 LRUCache = "1"
 Requires = "0.5,1"
-CUDA = "1,2,3"
+CUDA = "4"
 julia = "1.4"
 
 [extras]
