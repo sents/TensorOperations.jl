@@ -29,7 +29,7 @@ function add!(α, A::CuArray{<:Any,N}, CA::Symbol,
     descA = CuTensorDescriptor(A; op=opA)
     descC = CuTensorDescriptor(C; op=CUTENSOR_OP_IDENTITY)
     descD = descC
-    typeCompute = convert(cudaDataType, T)
+    typeCompute = convert(cudaDataType_t, T)
     modeA = collect(Cint, 1:N)
     modeC = collect(Cint, indCinA)
     stream = default_stream()
