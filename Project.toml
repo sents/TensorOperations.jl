@@ -9,8 +9,13 @@ Strided = "5e0ebb24-38b0-5f93-81fe-25c709ecae67"
 TupleTools = "9d95972d-f1c8-5527-a6e0-b4b365fa01f6"
 LRUCache = "8ac3fa9e-de4c-5943-b1dc-09c6b5f20637"
 Requires = "ae029012-a4dd-5104-9daa-d747884805df"
+
+[weakdeps]
 CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
 cuTENSOR = "011b41b2-24ef-40a8-b3eb-fa098493e9e1"
+
+[extensions]
+TensorOperations_CUDA = [ "cuTENSOR", "CUDA" ]
 
 [compat]
 Strided = "1"
@@ -18,7 +23,7 @@ TupleTools = "1.1"
 LRUCache = "1"
 Requires = "0.5,1"
 CUDA = "4"
-julia = "1.4"
+julia = "1.9"
 
 [extras]
 Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
