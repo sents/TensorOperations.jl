@@ -1,4 +1,5 @@
 # Default implementation for CuArrays
+const IndexTuple{N} = NTuple{N,Int}
 
 if isdefined(CUDA,:with_workspace)
     # for CUDA 3.3 and later
